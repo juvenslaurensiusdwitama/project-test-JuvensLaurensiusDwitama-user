@@ -41,23 +41,114 @@ body{
     background: url('./assets/hero-pict.jpg');
     height: 80vh;
     width: 100%;
-    border-radius: 0px 0px 50% 0px;
     opacity: 0.85;
     background-size: 100%;
     background-repeat: no-repeat;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 100%);
 }
 #hero-desc{
     position: absolute;
     color: white;
 }
-#main{
-    padding: 30px 80px;
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(280px,1fr)) ;
+    grid-template-rows: repeat(2,minmax(300px, 1fr));
+    padding: 0px 100px;
+    gap: 15px;
 }
 .card{
-    background-color: blueviolet;
-    height: 320px;
-    width: 300px;
-    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
     box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.5);
 }
+.desc{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.desc h3,.desc h2{
+    color: rgb(0, 0, 0);
+}
+.desc h3{
+    opacity: 0.7;
+}
+.img{
+    height: 165px;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.card-img1{
+    background-image: url('./assets/p1.jpg');
+}
+.card-img2{
+    background-image: url('./assets/card1.jpg');
+}
+.card-img3{
+    background-image: url('./assets/card3.jpg');
+}
+.card-img4{
+    background-image: url('./assets/card4.jpg');
+}
+.card-img5{
+    background-image: url('./assets/card5.jpg');
+}
+.card-img6{
+    background-image: url('./assets/card6.jpg');
+}
+.card-img7{
+    background-image: url('./assets/card7.jpg');
+}
+.card-img8{
+    background-image: url('./assets/card8.jpg');
+}
+#list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+    font-weight: bold;
+}
 
+#list .list-panah{
+    padding: 10px;
+    margin: 7px;
+    text-decoration: none;
+    color: black;
+}
+
+.list-num{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list-num a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    margin: 7px;
+}
+
+.list-num a:hover{
+    background-color: orangered;
+    border-radius: 15px;
+    color: white;
+}
+
+#showing-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+}
+.show-short{
+    display: flex;
+    gap: 20px;
+}
+.show select,.short select{
+    border-radius: 25px;
+    padding: 8px;
+    font-size: 16px;
+}
