@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto';
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FF6600;
+    height: 70px;
+}
+#header img{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    height: 45px;
+}
+#header nav{
+    display: flex;
+    gap: 25px;
+}
+#header nav a{
+    color: white;
+    text-decoration: none;
+}
+.active{
+    padding-bottom: 8px;
+    border-bottom: 5px solid white;
+}
+#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('./assets/hero-pict.jpg');
+    height: 80vh;
+    width: 100%;
+    border-radius: 0px 0px 50% 0px;
+    opacity: 0.85;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#hero-desc{
+    position: absolute;
+    color: white;
+}
+#main{
+    padding: 30px 80px;
+}
+.card{
+    background-color: blueviolet;
+    height: 320px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.5);
+}
+
